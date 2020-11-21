@@ -17,18 +17,20 @@ function scramble(str1, str2) {
     });
   });
   str2original = str2original.sort();
-  str2original = str2original.toString()
+  // str2original = str2original.toString()
   equals = equals.sort();
-  equals = equals.toString()
+  // equals = equals.toString()
 
-  n = equals.localeCompare(str2original);
-
-  switch (n) {
-    case 0:
-      return console.log(true)
-      break;
-    case -1:
-      return console.log(false)
-      break;
-  }
+  console.log("ORIGINAL",str2original)
+  console.log("EQUALS",equals)
+  // n = equals.localeCompare(str2original);
+  //
+  // switch (n) {
+  //   case 0:
+  //     return console.log(true)
+  //     break;
+  //   case -1:
+  //     return console.log(false)
+  //     break;
+  // }
 }
