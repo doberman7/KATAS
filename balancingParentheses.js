@@ -1,11 +1,7 @@
-// In this case '(' opens a section, and ')' closes a section
 // isBalanced("(Sensei says yes!)", "()")       // => True
 isBalanced("(Sensei says no!", "()")         // => False
-//
-// // In this case '(' and '[' open a section, while ')' and ']' close a section
 // isBalanced("(Sensei [says] yes!)", "()[]")   // => True
 // isBalanced("(Sensei [says) no!]", "()[]") // => False
-// // In this case a single quote (') both opens and closes a section
 // isBalanced("Sensei says 'yes'!", "''")       // => True
 // isBalanced("Sensei say's no!", "''")         // => False
 function isBalanced(s, caps) {
@@ -22,7 +18,6 @@ function isBalanced(s, caps) {
     s.forEach((item, i) => {
       // item es cada una de las letras del string "s"
          item = s[i];
-
         //si encontramoos que alguna de las letra del string es igual a lo mapeadoo
         if (map[item]) {
           //lo empujamos al array stack
